@@ -1,4 +1,4 @@
-# $Rev: 3362 $, $Date: 2005-08-15 12:17:57 $
+# $Rev: 3362 $, $Date: 2005-08-27 17:42:47 $
 #
 Summary:	rstart application
 Summary(pl):	Aplikacja rstart
@@ -15,7 +15,7 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	xorg-lib-libX11-devel
 BuildRequires:	xorg-util-util-macros
-BuildRequires:	pkg-config
+BuildRequires:	pkgconfig >= 0.19
 BuildRoot:	%{tmpdir}/rstart-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
