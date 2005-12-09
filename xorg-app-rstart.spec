@@ -1,19 +1,19 @@
 Summary:	rstart application
 Summary(pl):	Aplikacja rstart
 Name:		xorg-app-rstart
-Version:	0.99.1
+Version:	0.99.2
 Release:	0.1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC1/app/rstart-%{version}.tar.bz2
-# Source0-md5:	b5dd5f0df7eb8295a0957a9739a23123
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC3/app/rstart-%{version}.tar.bz2
+# Source0-md5:	c9a757fc2c1afc3df59da61ed67555be
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
 BuildRequires:	cpp
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xorg-lib-libX11-devel
-BuildRequires:	xorg-util-util-macros >= 0.99.1
+BuildRequires:	xorg-util-util-macros >= 0.99.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -38,8 +38,7 @@ Aplikacja rstart.
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT \
-	appmandir=%{_mandir}/man1
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
