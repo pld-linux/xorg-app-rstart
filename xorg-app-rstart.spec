@@ -1,12 +1,12 @@
 Summary:	rstart application
 Summary(pl):	Aplikacja rstart
 Name:		xorg-app-rstart
-Version:	1.0.1
+Version:	1.0.2
 Release:	0.1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/app/rstart-%{version}.tar.bz2
-# Source0-md5:	48bb7ad1fb9a4e43a8a702148dfb846e
+Source0:	http://xorg.freedesktop.org/releases/individual/app/rstart-%{version}.tar.bz2
+# Source0-md5:	99aea04a27197056368a4431f30f9cdb
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
