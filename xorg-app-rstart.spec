@@ -1,5 +1,5 @@
 Summary:	rstart application
-Summary(pl.UTF-8):   Aplikacja rstart
+Summary(pl.UTF-8):	Aplikacja rstart
 Name:		xorg-app-rstart
 Version:	1.0.2
 Release:	1
