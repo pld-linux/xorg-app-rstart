@@ -1,5 +1,5 @@
 Summary:	rstart application
-Summary(pl):	Aplikacja rstart
+Summary(pl.UTF-8):   Aplikacja rstart
 Name:		xorg-app-rstart
 Version:	1.0.2
 Release:	1
@@ -29,7 +29,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 rstart application.
 
-%description -l pl
+%description -l pl.UTF-8
 Aplikacja rstart.
 
 %prep
