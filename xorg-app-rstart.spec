@@ -1,5 +1,5 @@
-Summary:	rstart application
-Summary(pl.UTF-8):	Aplikacja rstart
+Summary:	rstart and rstartd applications - Remote Start client and helper
+Summary(pl.UTF-8):	Aplikacje rstart i rstartd - klient i program do zdalnego uruchamiania
 Name:		xorg-app-rstart
 Version:	1.0.2
 Release:	1
@@ -27,10 +27,20 @@ Requires:	xterm
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-rstart application.
+rstart is a simple implementation of a Remote Start client as defined
+in "A Flexible Remote Execution Protocol Based on rsh". It uses rsh as
+its underlying remote execution mechanism.
+
+rstartd is an implementation of a Remote Start "helper" as defined in
+"A Flexible Remote Execution Protocol Based on rsh".
 
 %description -l pl.UTF-8
-Aplikacja rstart.
+rstart to prosta implementacja klienta zdalnego uruchamiania (Remote
+Start) opisanego w publikacji "A Flexible Remote Execution Protocol
+Based on rsh". Wykorzystuje rsh jako mechanizm zdalnego wykonywania.
+
+rstartd to implementacja programu pomocniczego ("helpera") opisanego w
+"A Flexible Remote Execution Protocol Based on rsh".
 
 %prep
 %setup -q -n rstart-%{version}
