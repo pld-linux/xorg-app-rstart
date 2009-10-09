@@ -15,7 +15,7 @@ BuildRequires:	automake
 BuildRequires:	cpp
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xorg-lib-libX11-devel
-BuildRequires:	xorg-util-util-macros >= 0.99.2
+BuildRequires:	xorg-util-util-macros >= 1.2
 # contexts/x11r6
 Requires:	xorg-app-iceauth
 # contexts/x11r6, rstart client
