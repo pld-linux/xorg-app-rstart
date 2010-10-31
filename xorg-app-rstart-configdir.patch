@@ -1,18 +1,18 @@
---- rstart-1.0.2/Makefile.am.orig	2005-12-06 23:48:18.000000000 +0100
-+++ rstart-1.0.2/Makefile.am	2006-10-15 14:54:31.687867500 +0200
+--- rstart-1.0.4/Makefile.am.orig	2010-10-30 23:36:38.000000000 +0200
++++ rstart-1.0.4/Makefile.am	2010-10-31 08:10:53.471723445 +0100
 @@ -24,9 +24,10 @@
  rstart_serverdir = $(libdir)/X11/rstart
  rstart_server_PROGRAMS = rstartd.real
  
 +configdir = $(libdir)/X11/rstart
- rstartd_real_CFLAGS = $(RSTART_CFLAGS)			\
+ AM_CFLAGS = $(CWARNFLAGS) $(RSTART_CFLAGS)		\
  		-DSERVERNAME=\"rstart\"			\
 -		-DDEFAULT_CONFIG=\"$(libdir)/X11/rstart/config\"
 +		-DDEFAULT_CONFIG=\"$(configdir)/config\"
  
  rstartd_real_LDADD = $(RSTART_LIBS)
  
-@@ -50,7 +51,6 @@
+@@ -51,7 +52,6 @@
  
  # config data
  
