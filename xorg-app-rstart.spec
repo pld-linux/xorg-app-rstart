@@ -2,7 +2,7 @@ Summary:	rstart and rstartd applications - Remote Start client and helper
 Summary(pl.UTF-8):	Aplikacje rstart i rstartd - klient i program do zdalnego uruchamiania
 Name:		xorg-app-rstart
 Version:	1.0.5
-Release:	1
+Release:	2
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/app/rstart-%{version}.tar.bz2
@@ -80,5 +80,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/X11/rstart/contexts
 %dir /etc/X11/rstart
 %config(noreplace) %verify(not md5 mtime size) /etc/X11/rstart/config
-%{_mandir}/man1/rstart.1x*
-%{_mandir}/man1/rstartd.1x*
+%{_mandir}/man1/rstart.1*
+%{_mandir}/man1/rstartd.1*
