@@ -9,14 +9,3 @@
  dist_noinst_DATA = config.in
  
  CONFIG_SUBSTS = -e 's|@rstartdir[@]|$(rstartdir)|g'
---- rstart-1.0.5/configure.ac.orig	2013-02-11 03:18:02.000000000 +0100
-+++ rstart-1.0.5/configure.ac	2013-02-12 19:52:22.409237614 +0100
-@@ -47,7 +47,7 @@
- AC_SUBST([rstartdir],[$libdir/X11/rstart])
- 
- # Define the root directory for config
--AC_SUBST([configdir],[$(sysconfdir)/X11/rstart])
-+AC_SUBST([configdir],[${sysconfdir}/X11/rstart])
- 
- # Obtain compiler options from depedencies
- PKG_CHECK_MODULES(RSTART, xproto)
