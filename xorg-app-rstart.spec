@@ -45,7 +45,7 @@ rstartd to implementacja programu pomocniczego ("helpera") opisanego w
 
 %prep
 %setup -q -n rstart-%{version}
-%patch0 -p1
+%patch -P0 -p1
 
 # workaround unnecessary AC_CONFIG_MACRO_DIR([m4]) in configure.ac
 mkdir m4
